@@ -52,4 +52,4 @@ export class PreloadedDataHydrator {
   }
 }
 
-export const context = new PreloadedDataHydrator(Math.random().toString());
+export const context = new PreloadedDataHydrator('context');
