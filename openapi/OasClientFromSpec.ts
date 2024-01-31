@@ -104,10 +104,14 @@ export class OASClientFromSpec {
         b.variableDeclaration("const", [
           b.variableDeclarator(
             b.identifier("result"),
-            b.callExpression(b.identifier("produce"), [
-              b.identifier("faked"),
+            b.conditionalExpression(
               b.identifier("producer"),
-            ])
+              b.callExpression(b.identifier("produce"), [
+                b.identifier("faked"),
+                b.identifier("producer"),
+              ]),
+              b.identifier("faked"),
+            ),
           ),
         ]),
         b.returnStatement(b.identifier("result")),

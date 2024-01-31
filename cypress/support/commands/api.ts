@@ -9,7 +9,7 @@ const axios = ax.create({
 declare global {
   namespace Cypress {
     interface Chainable {
-      mock: (match: string, producer: any, key?: string) => Chainable;
+      mock: (match: string, producer?: any, key?: string) => Chainable;
       unmock: (key: string) => Chainable;
     }
   }
