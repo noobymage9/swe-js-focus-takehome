@@ -50,6 +50,8 @@ $ npm run openapi:dev
 $ npm run cy:open
 ```
 
+If you are using Windows + WSL2, refer to [Setting Up Cypress on Ubuntu WSL2](https://gist.github.com/pjobson/6b9fb926c59f58aa73d4efa10fe13654)
+
 You will need to run webpack, ssr, and the mock openapi server to begin debugging.
 
 ## Tasks
